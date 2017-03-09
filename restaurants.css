@@ -1,0 +1,524 @@
+#PageComplete {
+	width: 1358px;
+	height: 620px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.linelabel{
+	display:inline-block;
+	text-overflow: ellipsis;
+	color: black;
+	margin-left: 5px;
+}
+
+.lineimage{
+display:inline-block;
+text-overflow: ellipsis;
+}
+.lineimage label, a{
+text-overflow: ellipsis;
+}
+
+.Titre {
+	font-weight: bold;
+	font-family: Lucida Console;
+	font-size: 50px;
+	position: absolute;
+	top: 10px;
+	left: 1088px;
+}
+
+#G {
+	font-size: 75px;
+	color: red;
+}
+
+.SectionResto {
+    width: 551px;
+    height: 470px;
+    background-color: #D3D3D3;
+    float: left;
+    padding: 15px;
+    display: block;
+    margin-left: 10px;
+	border-radius: 15px;
+}
+
+.SectionResto a {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.SectionResto a.active {
+    background-color: #1E90FF;
+    color: white;
+	font-weight: bold;
+}
+
+.SearchBar {
+    background-repeat: no-repeat;
+    font-size: 25px;
+    width: 521px;
+    height: 35px;
+    margin-bottom: 20px;
+    border: 3px solid grey;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+.Table{
+	display: table;
+	width:400px;
+	border-radius: 8px;
+	border:3px solid grey;
+}
+.TitreListeRestaurants {
+	height: 35px;
+	width: 540px;
+	padding: 5px;
+	text-align:center;
+	font-size: 25px;
+	font-weight: bold;
+	color: black;
+	display: table-row;
+	background-color: grey;
+}
+
+.ListeRestaurants {
+	width: 544px;
+	height: 359px;
+	overflow-y: auto;
+	
+}
+
+.RestoItem {
+	height: 82px;
+	padding: 5px 7px;
+    width: 519px;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+.Image {
+	display: table-cell;
+	width: 80px;
+	height: 80px;
+	background-color: white;
+	float: left;
+}
+
+.Imagedivdroite {
+	display: table-cell;
+	width: 105px;
+	height: 105px;
+	background-color: white;
+	float: left;
+	margin-left: 5px;
+}
+
+.InformationResto {
+	display: table-cell;
+	width: 435px;
+	height: 80px;
+	text-align: left;
+	background-color: white;
+	float: left;
+}
+
+#NomRestoListe {
+	margin: 7px 0px 0px 8px;
+	font-weight: bold;
+	color: #000080;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 420px;
+}
+
+#RatingResto {
+	display: inline-block;
+	color: red;
+	margin-bottom: 7px;
+	margin-left: 8px;
+}
+
+#NumRating {
+	margin-left: 8px;
+}
+
+#DisplayRatingStars {
+	font-size: 20px;
+	margin-left: 8px;
+	color: red;
+}
+
+.adresse {
+	font-size: 12px;
+	font-weight: bold;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 420px;
+	margin-left: 8px;
+}
+
+#RestoListe {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul#RestoListe li a:focus {
+	background-color: #1E90FF;
+}
+
+.RestoID {
+	width: 400px;
+	Height: 80px;
+	margin: 2px;
+	background-color: black;
+}  
+.Infos {
+    width: 680px;
+    height: 470px;
+    padding: 15px 20px 15px 14px;
+    float: right;
+    display: inline-block;
+    margin-left: 40px;
+    background-color: #D3D3D3;
+    position: absolute;
+    margin-right: 30px;
+	border-radius: 15px;
+}
+
+.Infohaut{
+	width: 680px;
+    height: 250px;
+    background-color: white;
+    display: inline-block;
+    border-top: 3px solid grey;
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    border-radius: 10px 10px 0 0;
+}
+
+.InfosRow {
+	margin-bottom: 8px;
+}
+
+.InfosRowTitle {
+	margin-bottom: 8px;
+	height: 50px;
+}
+
+#nomresto {
+	font-size: 22px;
+	font-weight: bold;
+	color: #000080;
+}
+
+#sitewebresto {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 300px;
+}
+
+#sitewebresto:hover {
+	text-decoration: underline;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+#adresseresto {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 300px;
+}
+
+#adresseresto:hover {
+	text-decoration: underline;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+.LienResto {
+	text-decoration: none;
+}
+
+.LienResto:hover {
+	text-decoration: underline;
+	color: #000080;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+.Infobas{
+	width: 680px;
+    height: 209px;
+    display: inline-block;
+	background-color: white;
+	border-bottom: 3px solid grey;
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    border-radius: 0 0 10px 10px ;
+}
+
+.InfoResto{
+	width: 469px;
+    height: 215px;
+    display: inline-block;
+    margin:2px;
+	background-color: white;
+	float: left;
+	border-right: 1px dotted black;
+	
+}
+
+.hoursitem {
+	width: 325px;
+	font-size: 14px;
+}
+
+#openhours {
+	width: 200px;
+}
+
+.InfosHeuresOuverture {
+	width: 198px;
+    height: 235px;
+    display: table-cell;
+    margin: 2px;
+	background-color: white;
+	float: left;
+	overflow-x: auto;
+}
+
+#EstOuvert {
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.InformationRestodivdroite{
+    display: table-cell;
+    width: 385px;
+    height: 105px;
+    text-align: left;
+    background-color: white;
+}
+.Infoname{
+	width: 490px;
+    height: 170px;
+    display: inline-block;
+    margin-bottom: 5px;
+	background-color: blue;
+	float: left;
+}
+.Infohours{
+	width: 490px;
+    height: 75px;
+    display: inline-block;
+	background-color: blue;
+	float: left;
+}
+.avislabel{
+	color: #222;
+    font-size: 18px;
+    position: relative;
+	font-family: arial,sans-serif-medium,sans-serif;
+    margin-top: 8px;
+	font-weight: bold;
+}
+
+.listereviews{
+	width: 575px;
+    height: 209px;
+    display: inline-block;
+	background-color: white;
+	float: left;
+	overflow-y: auto;
+	border-radius: 0 0 0 10px
+}
+
+.avisdetails{
+	width: 105px;
+    height: 209px;;
+	background-color: grey;
+	float: left;
+	align-items:center;
+	border-radius: 0 0 5px 0;
+}
+.descreview{
+	margin-bottom:16px;
+}
+.circular {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	display:table-cell;
+	float: left;
+}
+.circular a img, .circular img {
+  width: 100%;
+  height: auto;
+
+}
+
+.Inforeviewer{
+	float:left;
+    width: 473px;
+    width: 470px;
+    margin-left: 10px;
+}
+
+
+.popup{
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(111,111,111,0.4); /* Black w/ opacity */
+}
+
+#tablepopup {
+    top: 40%;
+    left: 45%;
+    width:40em;
+    height:23em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    background-color: #f3f3f3;
+    position:fixed;
+	border-radius: 10px;
+	border:2px solid rgba(12,56,100,0.6);
+	box-shadow: 0 12px 16px 0 rgba(51,153,255,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.nomreviewer {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.timereview {
+	color: grey;
+	font-style: italic;
+}
+
+.lineimage img {
+	height: 14px;
+	width: 14px;
+}
+#popupfirst{
+	background-color:blue;
+	width:40em;
+	height:5em;
+}
+
+#popupsecond{
+	background-color:white;
+	width:40em;
+	height:18em;
+}
+
+.imageratereview{
+	
+	float:left;
+	width:5em;
+	height:5em;
+	background-color:#1E90FF;
+	display:flex;
+	align-items:center;
+	justify-content:center
+}
+
+.curentreviewinfo{
+	display:inline-block;
+	float:left;
+	width:35em;
+	height:5em;
+	background-color:white;
+	align-items:center;
+}
+
+#CommentTab {
+        resize: none;
+        width: 35em;
+        height: 100px;
+        margin-bottom: 0;
+        padding: 10px;
+}	
+
+.toptop {
+	background-color: #1E90FF
+}
+
+.close-image{
+    width: 32px;
+    height: 32px;
+    float: right;
+}
+
+
+.rating-num {
+  color: #333333;
+  font-size: 72px;
+  font-weight: 100;
+  line-height: 1em; 
+}
+
+#adresse_name_place{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 30em;
+	margin-top: 8px; 
+	font-size: 15px; 
+	color: white; 
+	font-weight: bold
+}
+.button1 {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.button1:hover {	
+	cursor: hand; 
+	cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#bigrating{
+    height: 170px;
+    margin: 0px;
+    width: 200px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}

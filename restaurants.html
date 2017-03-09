@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RestoGo Arielle&Francis</title>
+    <link rel="stylesheet" href="restaurants.css" />
+    <link rel="stylesheet" href="scss/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="restos.js"></script>
+    <script src="restaurants.js"></script>
+</head>
+<body>
+    <div id="PageComplete">
+        <img src="Images/Titre.jpg" style="width:1358px; height:60px; margin: 10px 0 30px 0;">
+        <div class="Titre">
+            <label>Resto<span id="G">G</span>O</label>
+        </div>
+        <div class="middle">
+            <div class="SectionResto">
+                <div>
+                    <input class="SearchBar" type="text" id="Input" oninput="filterHTML('#Resto', '.RestoItem', this.value)" placeholder="Recherche..">
+                </div>
+                <div class="Table">
+                    <div class="TitreListeRestaurants">
+                        <label>Liste des restaurants</label>
+                    </div>
+                    <div id="Resto" class="ListeRestaurants">
+                    </div>
+                </div>
+            </div>
+            <div class="Infos">
+                <div class="Infohaut">
+                    <div class="InfoResto">
+                        <div>
+                            <div class="Imagedivdroite">
+                                <a class="LienResto" target="blank" href=""><img src="" id="imgresto" style="width:80px; height:80px" /></a>
+                            </div>
+                            <div class="InformationRestodivdroite">
+                                <div class="InfosRowTitle"><a class="LienResto" target="blank" href=""><label id="nomresto"></label></a><br></div>
+                                <div class="InfosRow"><div class="lineimage"><img src="Images/phone-68-24.png" /></div><div class="linelabel"><label id="numtelresto"></label></div></div>
+                                <div class="InfosRow"><div class="lineimage"><img src="Images/Network-icon.png" /></div><div class="linelabel"><a target="blank" id="sitewebresto" href=""></a></div></div>
+                                <div class="InfosRow"><div class="lineimage"><img src="Images/map.png" /></div><div class="linelabel"><a target="blank" id="adresseresto" href=""></a></div></div>
+                                <div class="InfosRow"><!--<div class="lineimage"><label id="ratingresto"></label></div>--><div class="linelabel"><label id="DisplayRatingStars"></label></div></div>
+                            </div>
+                        </div>
+                        <div class="restotype">
+                            <div style="width:470px; height:35px"><span style="font-weight: bold">Type:</span><label id="typeresto"></label></div>
+                        </div>
+                        <div class="avislabel">Avis Google</div>
+                    </div>
+                    <div class="InfosHeuresOuverture">
+                        <div id="hourstitle"><h3>Heures d'ouverture</h3></div>
+                        <div id="openhours"></div>
+                        <div id="EstOuvert"></div>
+                    </div>
+                </div>
+                <div class="Infobas" data-id="" data-index="">
+                    <div class="listereviews">
+                    </div>
+                    <div class="avisdetails">
+						<div id ="bigrating">
+							<span class="rating-num"></span>
+							<div class="rating-stars"><label id="thisstars" style="color: red"></label></div>
+							<div class="rating-total"></div>
+						</div>
+						
+                        <div style="margin-left: 2px"><button class="button1" id="DonnerAvis" >Donner un avis</button></div>
+						
+                    </div>
+                </div>
+            </div>
+            <div class="popup">
+                <div id="tablepopup">
+                    <div id="popupfirst">
+                        <div class="imageratereview"><img src="Images/rate_review_white_2x_1.png" alt="review"></div>
+                        <div class="curentreviewinfo toptop">
+							<img class="close-image" src="Images\closebutton.png" />
+                            <div style="margin-top: 12px; font-size: 20px; color: white; font-weight: bold">Donner un avis</div>
+                            <div id="adresse_name_place"></div>
+                        </div>
+						
+                    </div>
+                    <!--current user informations-->
+                    <div id="popupsecond">
+                        <div class="imageratereview circular"><img src="Images/deadpool.jpg" alt="review"></div>
+                        <div class="curentreviewinfo">
+                            <div style="margin-top: 5px; margin-bottom: 5px; font-weight: bold; font-size: 20px">DeadPool</br></div>
+                            <div style="margin-bottom:12px">Votre avis seras affichée sur le web</div>
+                            <div id="starsadd" style="margin-bottom:12px">
+                                <span class="star-cb-group">
+                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                    <input type="radio" id="rating-4" name="rating" value="4" /><label for="rating-4">4</label>
+                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                                </span>
+                            </div>
+                            <div>
+                                <textarea type="text" id="CommentTab" placeholder="Write a review.." /></textarea>
+                                <input class="button1" type="button" id="SubmitButton" value="Soumettre" />
+                            </div>
+							<div style="display:none" id="log"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            render();
+            fillinfos(0);
+        </script>
+</body>
+</html>
